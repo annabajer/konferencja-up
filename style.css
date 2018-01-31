@@ -7,8 +7,9 @@ h2 {
 	margin-left: 20px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-h5 {
-	color: #324851;		
+h4 {
+	color: #324851;
+	font-weight:bold;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 p {
@@ -22,7 +23,9 @@ p {
   height:calc(47% - 1px);
   background-image:url('bg.png');
   background-size:cover;
+  background-position:center;
 }
+
 .wide img {
   width:100%;
 }
@@ -35,22 +38,50 @@ body {
 	margin-bottom: 25px;
 	padding-top: 25px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-
 }
 
-.sbuttons {
 
+
+.sbuttons {
 	color: #304040;
 	background-color: #66A5AD;
 	border-radius: 12px;
-	width: 19%;
-	
+
 }
+
+@media (max-width: 639px){
+	.sbuttons {
+		width: 17%;	
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 640px){
+	.sbuttons {
+		width: 18%;	
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 731px)  {
+	.sbuttons {
+		width: 19%;	
+		font-size: 14px;
+	}
+
+}
+
 .simg {
 	border-radius: 50px;
 	margin-left: 40px;
 	float: left;
+	width: 5%;
+	height: auto;
+	min-width: 60px;
+	min-height: 60px;
 }
+
+
 
 .navbar {
 
